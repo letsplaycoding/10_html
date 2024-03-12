@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>폼 관련 태그</h1>
+    <p>form 태그는 html에서 사용자가 입력할 수 있는 양식을 제공하는 태그이다.
+        form 태그 내의 input 태그들을 통해 사용자가 입력한 정보를 서버로 넘기는 역할을 한다.<br>
+        *action 속성: 폼의 입력된 값들을 전송받을 서버의 주소를 입력한다.<br>
+        * method 속성 : get/ post 방식으로 전송 방식을 지정한다.(Http method 방식 지정)
+    </p>
+    <form action="search" method="post">
+        <label for="scontents">검색할 내용:</label>
+            <input id="scontents" type="text" name="search" required placeholder="검색할 내용 입력하세요.">&nbsp;
+        <button type="submit">검색</button>
+    </form>
+</body>
+</html>
